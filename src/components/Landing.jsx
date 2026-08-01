@@ -1,5 +1,6 @@
 import React from 'react';
 import UndrawBooks from '../assets/Undraw_Books.svg';
+import { Link } from 'react-router-dom';
 
 const Landing = () => {
   return (
@@ -7,11 +8,11 @@ const Landing = () => {
      <header>
        <div className="header__container">
         <div className="header__description">
-          <p>Australia's most awarded online library platform.</p>
-          <h2>Find your dream book with <span className="purple">Library.</span></h2>
-          <a href="#features">
+          <p>America's most awarded online library platform</p>
+          <h2>Find your dream book with <span className="purple">Library</span></h2>
+          <Link to="#features">
             <button className="btn">Browse Books</button>
-          </a>
+          </Link>
         </div>
         <figure className="header__image--wrapper">
             <img src={UndrawBooks} alt="Books" />
